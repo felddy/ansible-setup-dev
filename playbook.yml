@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  name: Set system dev-tools
+  become: yes
+  become_method: sudo
+  roles:
+    - xcode
+
+- hosts: localhost
+  name: Set up dev environment
+  become: no
+  roles:
+    - homebrew
+    - dotfiles

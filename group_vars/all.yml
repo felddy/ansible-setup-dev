@@ -1,0 +1,10 @@
+---
+
+# dotfile repository
+dotfile_repo: git@github.com:felddy/.dotfiles.git
+
+# see: https://docs.brew.sh/Taps for github naming conventions
+homebrew_tap: felddy/taps
+
+# home directory of user
+home_dir: /Users/markf

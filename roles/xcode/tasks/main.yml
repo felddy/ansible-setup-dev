@@ -1,0 +1,14 @@
+---
+# tasks file for xcode
+
+- name: Install Xcode developer tools
+  command: xcode-select --install
+  args:
+    creates: /Applications/Xcode.app/Contents/Developer
+
+- name: Install SDK headers
+  command: 'installer -pkg /Library/Developer/CommandLineTools\
+  /Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /'
+  args:
+    creates: '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk\
+    /System/Library/Frameworks/Kernel.framework/Versions/A/Headers/libkern/zlib.h'

@@ -1,0 +1,12 @@
+---
+# tasks file for dotfiles
+
+- name: Checkout .dotfiles from github
+  command: git clone "{{ dotfile_repo }}" "{{ home_dir }}/.dotfiles"
+  args:
+    creates: "{{ home_dir }}/.dotfiles"
+
+- name: Stow dotfiles into home directory
+  command: bash -c 'stow -v --stow **/'
+  args:
+    chdir: "{{ home_dir }}/.dotfiles"

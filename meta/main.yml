@@ -1,8 +1,8 @@
 ---
 galaxy_info:
   author: First Last
-  description: Skeleton Ansible role
-  company: CISA NCATS
+  description: Ansible setup dev
+  company: Geekpad
   license: CC0
   min_ansible_version: 2.0
   platforms:
@@ -13,6 +13,6 @@ galaxy_info:
       versions:
         - 2018.03
   galaxy_tags:
-    - skeleton
+    - dev
 
 dependencies: []
