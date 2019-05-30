@@ -1,16 +1,9 @@
-# skeleton-ansible-role #
+# ansbile-setup-dev 🖥🍺🐍 #
 
-[![Build Status](https://travis-ci.com/cisagov/skeleton-ansible-role.svg?branch=develop)](https://travis-ci.com/cisagov/skeleton-ansible-role)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/cisagov/skeleton-ansible-role.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/skeleton-ansible-role/alerts/)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/cisagov/skeleton-ansible-role.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/skeleton-ansible-role/context:python)
+[![Build Status](https://travis-ci.com/felddy/ansbile-setup-dev.svg?branch=develop)](https://travis-ci.com/felddy/ansbile-setup-dev)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/felddy/ansbile-setup-dev.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/felddy/ansbile-setup-dev/alerts/)
 
-This is a skeleton project that can be used to quickly get a new
-[cisagov](https://github.com/cisagov) Ansible role GitHub project
-started.  This skeleton project contains [licensing
-information](LICENSE.md), as well as [pre-commit
-hooks](https://pre-commit.com) and a [Travis
-CI](https://travis-ci.com) configuration appropriate for an Ansible
-role.
+This is an ansible playbook that can be used to setup a Mac development environment.
 
 ## Requirements ##
 
@@ -18,7 +11,8 @@ None.
 
 ## Role Variables ##
 
-None.
+Look at [group_vars/all.yml](group_vars/all.yml) for variables that will
+need to bechanged for your personal environment.
 
 ## Dependencies ##
 
@@ -26,15 +20,9 @@ None.
 
 ## Example Playbook ##
 
-Here's how to use it in a playbook:
+Here's how to use it:
 
-```yaml
-- hosts: all
-  become: yes
-  become_method: sudo
-  roles:
-    - skeleton
-```
+`ansible-playbook -i localhost, playbook.yml --become --ask-become-pass`
 
 ## Contributing ##
 
@@ -53,7 +41,3 @@ dedication](https://creativecommons.org/publicdomain/zero/1.0/).
 All contributions to this project will be released under the CC0
 dedication. By submitting a pull request, you are agreeing to comply
 with this waiver of copyright interest.
-
-## Author Information ##
-
-First Last - <first.last@trio.dhs.gov>
