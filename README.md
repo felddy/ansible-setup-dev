@@ -1,7 +1,7 @@
-# ansbile-setup-dev 🖥🍺🐍 #
+# ansible-setup-dev 🖥🍺🐍 #
 
-[![Build Status](https://travis-ci.com/felddy/ansbile-setup-dev.svg?branch=develop)](https://travis-ci.com/felddy/ansbile-setup-dev)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/felddy/ansbile-setup-dev.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/felddy/ansbile-setup-dev/alerts/)
+[![Build Status](https://travis-ci.com/felddy/ansible-setup-dev.svg?branch=develop)](https://travis-ci.com/felddy/ansible-setup-dev)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/felddy/ansible-setup-dev.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/felddy/ansible-setup-dev/alerts/)
 
 This is an ansible playbook that can be used to setup a Mac development environment.
 
