@@ -2,7 +2,7 @@
 # tasks file for homebrew
 
 - name: Install homebrew
-  command: '/usr/bin/ruby -e "$(curl -fsSL \
+  command: '/usr/bin/ruby -e "$(curl -fsSL
   https://raw.githubusercontent.com/Homebrew/install/master/install)"'
   args:
     creates: /usr/local/bin/brew
@@ -10,7 +10,7 @@
 - name: Install personal homebrew tap
   command: brew tap "{{ homebrew_tap }}"
   args:
-    creates: "/usr/local/Homebrew/Library/Taps/{{  homebrew_tap\
+    creates: "/usr/local/Homebrew/Library/Taps/{{  homebrew_tap
     .split('/')[0] }}/homebrew-{{  homebrew_tap.split('/')[1] }}"
 
 - homebrew:
