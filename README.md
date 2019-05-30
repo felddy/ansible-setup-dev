@@ -22,7 +22,7 @@ None.
 
 Here's how to use it:
 
-`ansible-playbook -i localhost, playbook.yml --become --ask-become-pass`
+`ansible-playbook -i localhost, playbook.yml --ask-become-pass`
 
 ## Contributing ##
 
