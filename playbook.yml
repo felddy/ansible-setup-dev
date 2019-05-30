@@ -3,12 +3,14 @@
   name: Set system dev-tools
   become: yes
   become_method: sudo
+  gather_facts: False
   roles:
     - xcode
 
 - hosts: localhost
   name: Set up dev environment
   become: no
+  gather_facts: False
   roles:
     - homebrew
     - dotfiles
