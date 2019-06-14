@@ -21,6 +21,7 @@
       - git
       - gnupg-shared-sc
       - htop
+      - opensc
       - pyenv
       - pyenv-virtualenv
       - shellcheck
